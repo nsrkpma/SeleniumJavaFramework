@@ -7,7 +7,9 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  name: MyPersonalPC
+  demands:
+    - Agent.Name -equals ThinkpadE14
 
 steps:
 - task: Maven@3
