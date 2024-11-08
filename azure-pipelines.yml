@@ -20,7 +20,6 @@ steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
-    goals: 'clean install'
     javaHomeOption: 'Path'
     jdkDirectory: '$(JAVA_HOME)'
     publishJUnitResults: true
