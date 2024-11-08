@@ -12,11 +12,6 @@ pool:
     - Agent.Name -equals ThinkpadE14
 
 steps:
-- task: UseJavaVersion@1
-  inputs:
-    versionSpec: '21'
-    jdkArchitectureOption: 'x64'
-
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
