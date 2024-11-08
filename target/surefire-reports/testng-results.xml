@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-08T12:13:35 IST" name="Suite" finished-at="2024-11-08T12:13:45 IST" duration-ms="9330">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorValidationsTest.incorrectEmailPasswordErrorValidation()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@5340477f]" name="incorrectEmailPasswordErrorValidation" class="Kane.SeleniumJavaFramework.tests.ErrorValidationsTest"/>
+        <method signature="ErrorValidationsTest.invalidEmailValidation()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@5340477f]" name="invalidEmailValidation" class="Kane.SeleniumJavaFramework.tests.ErrorValidationsTest"/>
+      </group> <!-- ErrorHandling -->
+    </groups>
+    <test started-at="2024-11-08T12:13:35 IST" name="End to End Test" finished-at="2024-11-08T12:13:35 IST" duration-ms="16">
+    </test> <!-- End to End Test -->
+    <test started-at="2024-11-08T12:13:36 IST" name="Login Error Vlidatiobs" finished-at="2024-11-08T12:13:45 IST" duration-ms="9014">
+      <class name="Kane.SeleniumJavaFramework.tests.ErrorValidationsTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@5340477f]" started-at="2024-11-08T12:13:36 IST" name="launchApplication" finished-at="2024-11-08T12:13:40 IST" duration-ms="4096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="incorrectEmailPasswordErrorValidation()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@5340477f]" started-at="2024-11-08T12:13:40 IST" name="incorrectEmailPasswordErrorValidation" finished-at="2024-11-08T12:13:40 IST" duration-ms="593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- incorrectEmailPasswordErrorValidation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@5340477f]" started-at="2024-11-08T12:13:40 IST" name="teardown" finished-at="2024-11-08T12:13:40 IST" duration-ms="97" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@5340477f]" started-at="2024-11-08T12:13:40 IST" name="launchApplication" finished-at="2024-11-08T12:13:44 IST" duration-ms="3677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="invalidEmailValidation()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@5340477f]" started-at="2024-11-08T12:13:44 IST" name="invalidEmailValidation" finished-at="2024-11-08T12:13:45 IST" duration-ms="340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidEmailValidation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@5340477f]" started-at="2024-11-08T12:13:45 IST" name="teardown" finished-at="2024-11-08T12:13:45 IST" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Kane.SeleniumJavaFramework.tests.ErrorValidationsTest -->
+    </test> <!-- Login Error Vlidatiobs -->
+  </suite> <!-- Suite -->
+</testng-results>
