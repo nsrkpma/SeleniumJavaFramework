@@ -12,11 +12,17 @@ pool:
     - Agent.Name -equals ThinkpadE14
 
 steps:
+- task: UseJavaVersion@1
+  inputs:
+    versionSpec: '21'
+    jdkArchitectureOption: 'x64'
+
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m'
+    goals: 'clean install'
     javaHomeOption: 'Path'
+    jdkDirectory: '$(JAVA_HOME)'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'test -PRegression'
