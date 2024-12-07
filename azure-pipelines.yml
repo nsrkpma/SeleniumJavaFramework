@@ -1,8 +1,3 @@
-# Maven
-# Build your Java project and run tests with Apache Maven.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/java
-
 trigger:
 - main
 
@@ -10,7 +5,6 @@ pool:
   name: MyPersonalPC
   demands:
     - Agent.Name -equals ThinkpadE14
-
 parameters:
 - name: browserName
   displayName: 'Browser Name'
@@ -32,7 +26,6 @@ parameters:
 
 variables: 
 - group: Email_Secrets
-
 steps:
 - task: Maven@3
   inputs:
@@ -45,7 +38,7 @@ steps:
 
 - script: |
     echo "Copying HTML report to artifact staging directory"
-    copy "reports\index.html" "$(Build.ArtifactStagingDirectory)\index.html"
+    copy "test-output\index.html" "$(Build.ArtifactStagingDirectory)\index.html"
   displayName: 'Copy HTML Report'
   condition: always()
 
@@ -62,4 +55,7 @@ steps:
       Nirmal
     BodyAsHtml: false
     AddAttachment: true
-    Attachment:
+    Attachment: '$(Build.ArtifactStagingDirectory)/index.html'
+    SmtpServer: 'smtp.gmail.com'
+    SmtpUsername: '$(SMTP_USER_NAME)'
+    SmtpPassword: '$(SMTP_PASSWORD)'
