@@ -28,9 +28,6 @@ steps:
     Subject: 'Pipeline Job Completed'
     Body: |
       The pipeline job has completed successfully.
-      - Pipeline: $(Build.DefinitionName)
-      - Build Number: $(Build.BuildNumber)
-      - Status: $(Build.Status)
     SmtpServer: 'smtp.gmail.com'
     SmtpPort: '465'
     SmtpUsername: 'nsr01734@gmail.com'
