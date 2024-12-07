@@ -25,12 +25,12 @@ steps:
   condition: always()
   inputs:
     To: 'nsr.kpma@gmail.com'
-    Subject: 'Pipeline Job Completed'
-    Body: |
-      The pipeline job has completed successfully.
+    From: 'nsr01734@gmail.com'
+    Subject: 'Selenium Test Report'
+    Body: 'Pls find the report in attachment'
+    BodyAsHtml: false
+    AddAttachment: false
     SmtpServer: 'smtp.gmail.com'
     SmtpPort: '465'
     SmtpUsername: 'nsr01734@gmail.com'
     SmtpPassword: 'howfcysmetyfnjsk'
-    From: 'nsr01734@gmail.com'
-    UseSSL: true
