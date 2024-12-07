@@ -20,7 +20,10 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'test -PRegression'
-
+- script: |
+    echo "Copying HTML report to artifact staging directory"
+    cp test-output/index.html $(Build.ArtifactStagingDirectory)/index.html
+  displayName: 'Copy HTML Report'
 - task: SendEmail@1
   condition: always()
   inputs:
@@ -34,7 +37,7 @@ steps:
       Nirmal
     BodyAsHtml: false
     AddAttachment: true
-    Attachment: 'test-output/index.html'
+    Attachment: '$(Build.ArtifactStagingDirectory)/report.html'
     SmtpServer: 'smtp.gmail.com'
     SmtpUsername: 'nsr01734@gmail.com'
     SmtpPassword: 'howfcysmetyfnjsk'
