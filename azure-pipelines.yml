@@ -11,6 +11,14 @@ pool:
   demands:
     - Agent.Name -equals ThinkpadE14
 
+parameters:
+- name: mavenGoals
+  displayName: 'Maven Goals'
+  type: string
+  default: 'test -PRegression'
+  values:
+  - 'test -PRegression'
+  - 'test -PErrorValidation'
 variables: 
 - group: Email_Secrets
 
@@ -22,7 +30,8 @@ steps:
     jdkDirectory: '$(JAVA_HOME)'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'test -PRegression'
+    goals: ${{ parameters.mavenGoals }}
+    
 - script: |
     echo "Copying HTML report to artifact staging directory"
     copy "reports\index.html" "$(Build.ArtifactStagingDirectory)\index.html"
