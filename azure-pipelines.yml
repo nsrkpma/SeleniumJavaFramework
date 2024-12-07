@@ -20,3 +20,18 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'test -PRegression'
+
+- task: SendEmail@1
+  inputs:
+    To: 'nsr.kpma@gmail.com'
+    Subject: 'Pipeline Job Completed'
+    Body: |
+      The pipeline job has completed successfully.
+      - Pipeline: $(Build.DefinitionName)
+      - Build Number: $(Build.BuildNumber)
+      - Status: $(Build.Status)
+    SmtpServer: 'smtp.gmail.com'
+    SmtpPort: '465'
+    SmtpUsername: 'nsr01734@gmail.com'
+    SmtpPassword: 'howfcysmetyfnjsk'
+    From: 'nsr01734@gmail.com'
