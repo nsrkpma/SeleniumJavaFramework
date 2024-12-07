@@ -33,3 +33,4 @@ steps:
     SmtpUsername: 'nsr01734@gmail.com'
     SmtpPassword: 'howfcysmetyfnjsk'
     From: 'nsr01734@gmail.com'
+    UseSSL: true
