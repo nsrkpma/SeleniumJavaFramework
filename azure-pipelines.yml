@@ -38,7 +38,7 @@ steps:
       Nirmal
     BodyAsHtml: false
     AddAttachment: true
-    Attachment: '$(Build.ArtifactStagingDirectory)/report.html'
+    Attachment: '$(Build.ArtifactStagingDirectory)/index.html'
     SmtpServer: 'smtp.gmail.com'
     SmtpUsername: 'nsr01734@gmail.com'
     SmtpPassword: 'howfcysmetyfnjsk'
