@@ -24,6 +24,7 @@ steps:
     echo "Copying HTML report to artifact staging directory"
     cp test-output/index.html $(Build.ArtifactStagingDirectory)/index.html
   displayName: 'Copy HTML Report'
+  condition: always()
 - task: SendEmail@1
   condition: always()
   inputs:
