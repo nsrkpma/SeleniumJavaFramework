@@ -31,6 +31,6 @@ steps:
     BodyAsHtml: false
     AddAttachment: false
     SmtpServer: 'smtp.gmail.com'
-    SmtpPort: '465'
+    SmtpPort: '587'
     SmtpUsername: 'nsr01734@gmail.com'
     SmtpPassword: 'howfcysmetyfnjsk'
