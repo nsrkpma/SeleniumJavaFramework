@@ -22,6 +22,7 @@ steps:
     goals: 'test -PRegression'
 
 - task: SendEmail@1
+  condition: always()
   inputs:
     To: 'nsr.kpma@gmail.com'
     Subject: 'Pipeline Job Completed'
