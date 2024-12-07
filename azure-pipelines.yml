@@ -1,4 +1,10 @@
 # Maven
+- task: SendEmail@1
+  inputs:
+    Subject: 
+    BodyAsHtml: false
+    AddAttachment: false
+    Attachment: 'test-output/index.html'
 # Build your Java project and run tests with Apache Maven.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
@@ -24,13 +30,17 @@ steps:
 - task: SendEmail@1
   condition: always()
   inputs:
-    To: 'nsr.kpma@gmail.com'
+    To: 'nsr.kpma@outlook.com'
     From: 'nsr01734@gmail.com'
-    Subject: 'Selenium Test Report'
-    Body: 'Pls find the report in attachment'
+    Subject: 'Selenium Test Automation Report'
+    Body: |
+      Hi Team,
+      Please find the Selenium test automation report in the attachments.
+      Thanks
+      Nirmal
     BodyAsHtml: false
-    AddAttachment: false
+    AddAttachment: true
+    Attachment: 'test-output/index.html'
     SmtpServer: 'smtp.gmail.com'
-    SmtpPort: '587'
     SmtpUsername: 'nsr01734@gmail.com'
     SmtpPassword: 'howfcysmetyfnjsk'
