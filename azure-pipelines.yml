@@ -38,7 +38,7 @@ steps:
 
 - script: |
     echo "Copying HTML report to artifact staging directory"
-    copy "test-output\index.html" "$(Build.ArtifactStagingDirectory)\index.html"
+    copy "reports\index.html" "$(Build.ArtifactStagingDirectory)\index.html"
   displayName: 'Copy HTML Report'
   condition: always()
 
