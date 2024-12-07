@@ -28,7 +28,7 @@ steps:
 - task: SendEmail@1
   condition: always()
   inputs:
-    To: 'nsr.kpma@outlook.com;jaswant.rawa.ksp@gmail.com'
+    To: 'nsr.kpma@outlook.com;jaswant.rawat.ksp@gmail.com'
     From: 'nsr01734@gmail.com'
     Subject: 'Selenium Test Automation Report'
     Body: |
