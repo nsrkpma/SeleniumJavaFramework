@@ -42,6 +42,6 @@ steps:
     BodyAsHtml: false
     AddAttachment: true
     Attachment: '$(Build.ArtifactStagingDirectory)/index.html'
-    SmtpServer: '$(SMTP_USER_NAME)'
-    SmtpUsername: 'nsr01734@gmail.com'
+    SmtpServer: 'smtp.gmail.com'
+    SmtpUsername: '$(SMTP_USER_NAME)'
     SmtpPassword: '$(SMTP_PASSWORD)'
