@@ -11,6 +11,9 @@ pool:
   demands:
     - Agent.Name -equals ThinkpadE14
 
+variables: 
+- group: Email_Secrets
+
 steps:
 - task: Maven@3
   inputs:
