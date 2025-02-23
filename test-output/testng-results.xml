@@ -1,80 +1,282 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results retried="1" ignored="1" total="10" passed="7" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-08T14:01:38 IST" name="Default suite" finished-at="2024-11-08T14:01:50 IST" duration-ms="11396">
+  <suite started-at="2024-12-04T20:13:30 IST" name="Suite" finished-at="2024-12-04T20:13:59 IST" duration-ms="29229">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Kane.SeleniumJavaFramework.cucumber.TestNGTestRunner@2b30a42c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
+      <group name="ErrorHandling">
+        <method signature="ErrorValidationsTest.incorrectEmailPasswordErrorValidation()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@4d9ac0b4]" name="incorrectEmailPasswordErrorValidation" class="Kane.SeleniumJavaFramework.tests.ErrorValidationsTest"/>
+        <method signature="ErrorValidationsTest.invalidEmailValidation()[pri:1, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@4d9ac0b4]" name="invalidEmailValidation" class="Kane.SeleniumJavaFramework.tests.ErrorValidationsTest"/>
+      </group> <!-- ErrorHandling -->
     </groups>
-    <test started-at="2024-11-08T14:01:38 IST" name="Default test" finished-at="2024-11-08T14:01:50 IST" duration-ms="11396">
-      <class name="Kane.SeleniumJavaFramework.cucumber.TestNGTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Kane.SeleniumJavaFramework.cucumber.TestNGTestRunner@2b30a42c]" started-at="2024-11-08T14:01:38 IST" name="setUpClass" finished-at="2024-11-08T14:01:39 IST" duration-ms="790" status="PASS">
+    <test started-at="2024-12-04T20:13:30 IST" name="Login Error Vlidatiobs" finished-at="2024-12-04T20:13:45 IST" duration-ms="15086">
+      <class name="Kane.SeleniumJavaFramework.tests.ErrorValidationsTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@4d9ac0b4]" started-at="2024-12-04T20:13:30 IST" name="launchApplication" finished-at="2024-12-04T20:13:37 IST" duration-ms="6512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="incorrectEmailPasswordErrorValidation()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@4d9ac0b4]" started-at="2024-12-04T20:13:37 IST" name="incorrectEmailPasswordErrorValidation" finished-at="2024-12-04T20:13:37 IST" duration-ms="477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- incorrectEmailPasswordErrorValidation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@4d9ac0b4]" started-at="2024-12-04T20:13:37 IST" name="teardown" finished-at="2024-12-04T20:13:37 IST" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@4d9ac0b4]" started-at="2024-12-04T20:13:37 IST" name="launchApplication" finished-at="2024-12-04T20:13:39 IST" duration-ms="1991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="incorrectEmailPasswordErrorValidation()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@4d9ac0b4]" started-at="2024-12-04T20:13:39 IST" name="incorrectEmailPasswordErrorValidation" finished-at="2024-12-04T20:13:40 IST" duration-ms="546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- incorrectEmailPasswordErrorValidation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@4d9ac0b4]" started-at="2024-12-04T20:13:40 IST" name="teardown" finished-at="2024-12-04T20:13:40 IST" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@4d9ac0b4]" started-at="2024-12-04T20:13:40 IST" name="launchApplication" finished-at="2024-12-04T20:13:42 IST" duration-ms="2237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="incorrectEmailPasswordErrorValidation()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@4d9ac0b4]" started-at="2024-12-04T20:13:42 IST" name="incorrectEmailPasswordErrorValidation" finished-at="2024-12-04T20:13:43 IST" duration-ms="592" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- incorrectEmailPasswordErrorValidation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@4d9ac0b4]" started-at="2024-12-04T20:13:43 IST" name="teardown" finished-at="2024-12-04T20:13:43 IST" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@4d9ac0b4]" started-at="2024-12-04T20:13:43 IST" name="launchApplication" finished-at="2024-12-04T20:13:45 IST" duration-ms="1983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="invalidEmailValidation()[pri:1, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@4d9ac0b4]" started-at="2024-12-04T20:13:45 IST" name="invalidEmailValidation" finished-at="2024-12-04T20:13:45 IST" duration-ms="312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidEmailValidation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@4d9ac0b4]" started-at="2024-12-04T20:13:45 IST" name="teardown" finished-at="2024-12-04T20:13:45 IST" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Kane.SeleniumJavaFramework.tests.ErrorValidationsTest -->
+    </test> <!-- Login Error Vlidatiobs -->
+    <test started-at="2024-12-04T20:13:30 IST" name="End to End Test" finished-at="2024-12-04T20:13:59 IST" duration-ms="29229">
+      <class name="Kane.SeleniumJavaFramework.tests.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@388526fb]" started-at="2024-12-04T20:13:30 IST" name="launchApplication" finished-at="2024-12-04T20:13:36 IST" duration-ms="6107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="endToendTest(java.util.HashMap)[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@388526fb]" started-at="2024-12-04T20:13:36 IST" name="endToendTest" data-provider="getDataMap" finished-at="2024-12-04T20:13:40 IST" duration-ms="3301" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1afd72ef]]>
+                <![CDATA[{productname=ZARA COAT 3, password=Kane@1213, email=Kane@gmail.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Kane.SeleniumJavaFramework.cucumber.TestNGTestRunner@2b30a42c]" started-at="2024-11-08T14:01:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-08T14:01:43 IST" duration-ms="4142" status="FAIL">
+        </test-method> <!-- endToendTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@388526fb]" started-at="2024-12-04T20:13:40 IST" name="teardown" finished-at="2024-12-04T20:13:40 IST" duration-ms="301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@388526fb]" started-at="2024-12-04T20:13:40 IST" name="launchApplication" finished-at="2024-12-04T20:13:42 IST" duration-ms="2272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="endToendTest(java.util.HashMap)[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@388526fb]" started-at="2024-12-04T20:13:42 IST" name="endToendTest" data-provider="getDataMap" finished-at="2024-12-04T20:13:46 IST" duration-ms="3325" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Posiitive Test of Sub,ititng the order"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Error Validation on Login page"]]>
+                <![CDATA[{productname=ADIDAS ORIGINAL, password=Kane@1213, email=Kane@gmail.com}]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endToendTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@388526fb]" started-at="2024-12-04T20:13:46 IST" name="teardown" finished-at="2024-12-04T20:13:46 IST" duration-ms="107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@388526fb]" started-at="2024-12-04T20:13:46 IST" name="launchApplication" finished-at="2024-12-04T20:13:48 IST" duration-ms="1916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method retried="true" signature="endToendTest(java.util.HashMap)[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@388526fb]" started-at="2024-12-04T20:13:48 IST" name="endToendTest" data-provider="getDataMap" finished-at="2024-12-04T20:13:50 IST" duration-ms="1857" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{productname=QWERTY, password=Kane@1213, email=Kane@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[expected [Incorrect email or password.] but found []]]>
+              <![CDATA[element click intercepted: Element is not clickable at point (606, 789)
+  (Session info: chrome=131.0.6778.87)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3acbb9e88707ee08e8987fa0812d0895, clickElement {id=f.F9BEC11D2978F65364681A2457664857.d.1DA2C40727078CFCE52551F43C6E5AA6.e.84}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.87, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\nsrkp\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53094}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53094/devtoo..., se:cdpVersion: 131.0.6778.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (3acbb9e88707ee08e8987fa0812d0895)] -> css selector: .mb-3]] -> css selector: .card-body button:last-of-type]
+Session ID: 3acbb9e88707ee08e8987fa0812d0895]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found []
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at Kane.SeleniumJavaFramework.stepDefinition.StepDefinitonImp.error_message_dispalyed_on_confirmation_page(StepDefinitonImp.java:58)
-at ✽."Incorrect email or password." messgae is displayed(file:///D:/eclipse/SeleniumJavaFramework/src/test/java/Kane/SeleniumJavaFramework/cucumber/ErrorValidatons.feature:9)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (606, 789)
+  (Session info: chrome=131.0.6778.87)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3acbb9e88707ee08e8987fa0812d0895, clickElement {id=f.F9BEC11D2978F65364681A2457664857.d.1DA2C40727078CFCE52551F43C6E5AA6.e.84}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.87, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\nsrkp\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53094}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53094/devtoo..., se:cdpVersion: 131.0.6778.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (3acbb9e88707ee08e8987fa0812d0895)] -> css selector: .mb-3]] -> css selector: .card-body button:last-of-type]
+Session ID: 3acbb9e88707ee08e8987fa0812d0895
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at Kane.SeleniumJavaFramework.pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:52)
+at Kane.SeleniumJavaFramework.tests.SubmitOrderTest.endToendTest(SubmitOrderTest.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Kane.SeleniumJavaFramework.cucumber.TestNGTestRunner@2b30a42c]" started-at="2024-11-08T14:01:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-08T14:01:50 IST" duration-ms="6365" status="PASS">
+        </test-method> <!-- endToendTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@388526fb]" started-at="2024-12-04T20:13:50 IST" name="teardown" finished-at="2024-12-04T20:13:50 IST" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@388526fb]" started-at="2024-12-04T20:13:50 IST" name="launchApplication" finished-at="2024-12-04T20:13:52 IST" duration-ms="2316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="endToendTest(java.util.HashMap)[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@388526fb]" started-at="2024-12-04T20:13:52 IST" name="endToendTest" data-provider="getDataMap" finished-at="2024-12-04T20:13:54 IST" duration-ms="1782" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Posiitive Test of Sub,ititng the order"]]>
+                <![CDATA[{productname=QWERTY, password=Kane@1213, email=Kane@gmail.com}]]>
               </value>
             </param>
-            <param index="1">
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (606, 789)
+  (Session info: chrome=131.0.6778.87)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [32e8b3d995cbf74623c724d0dd99a792, clickElement {id=f.B0253EA508772FDFD7CD09B3B63551CF.d.691BAC54F3FB54C5D6319EBA2125E820.e.84}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.87, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\nsrkp\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53112}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53112/devtoo..., se:cdpVersion: 131.0.6778.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (32e8b3d995cbf74623c724d0dd99a792)] -> css selector: .mb-3]] -> css selector: .card-body button:last-of-type]
+Session ID: 32e8b3d995cbf74623c724d0dd99a792]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (606, 789)
+  (Session info: chrome=131.0.6778.87)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [32e8b3d995cbf74623c724d0dd99a792, clickElement {id=f.B0253EA508772FDFD7CD09B3B63551CF.d.691BAC54F3FB54C5D6319EBA2125E820.e.84}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.87, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\nsrkp\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53112}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53112/devtoo..., se:cdpVersion: 131.0.6778.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (32e8b3d995cbf74623c724d0dd99a792)] -> css selector: .mb-3]] -> css selector: .card-body button:last-of-type]
+Session ID: 32e8b3d995cbf74623c724d0dd99a792
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at Kane.SeleniumJavaFramework.pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:52)
+at Kane.SeleniumJavaFramework.tests.SubmitOrderTest.endToendTest(SubmitOrderTest.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endToendTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@388526fb]" started-at="2024-12-04T20:13:54 IST" name="teardown" finished-at="2024-12-04T20:13:54 IST" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@388526fb]" started-at="2024-12-04T20:13:54 IST" name="launchApplication" finished-at="2024-12-04T20:13:56 IST" duration-ms="2172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="endToendTest(java.util.HashMap)[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@388526fb]" started-at="2024-12-04T20:13:56 IST" name="endToendTest" data-provider="getDataMap" finished-at="2024-12-04T20:13:59 IST" duration-ms="3018" status="PASS">
+          <params>
+            <param index="0">
               <value>
-                <![CDATA["Place an order from ecommer site"]]>
+                <![CDATA[{productname=IPHONE 13 PRO, password=Kane@1213, email=Kane@gmail.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Kane.SeleniumJavaFramework.cucumber.TestNGTestRunner@2b30a42c]" started-at="2024-11-08T14:01:50 IST" name="tearDownClass" finished-at="2024-11-08T14:01:50 IST" duration-ms="43" status="PASS">
+        </test-method> <!-- endToendTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@388526fb]" started-at="2024-12-04T20:13:59 IST" name="teardown" finished-at="2024-12-04T20:13:59 IST" duration-ms="122" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- Kane.SeleniumJavaFramework.cucumber.TestNGTestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- teardown -->
+      </class> <!-- Kane.SeleniumJavaFramework.tests.SubmitOrderTest -->
+    </test> <!-- End to End Test -->
+  </suite> <!-- Suite -->
 </testng-results>

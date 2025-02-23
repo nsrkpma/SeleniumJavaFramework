@@ -6,6 +6,7 @@ import java.util.List;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Kane.SeleniumJavaFramework.TestComponents.BaseTest;
@@ -21,6 +22,7 @@ public class SubmitOrderTest extends BaseTest {
 	private static final boolean flase = false;
 	String productname = "ZARA COAT 3";
 
+	
 	@Test(dataProvider = "getDataMap",retryAnalyzer=Retry.class)
 	public void endToendTest(HashMap<String, String> input) throws IOException, InterruptedException {
 		ProductCatalogue productCatalogue = landingPage.login(input.get("email"), input.get("password"));

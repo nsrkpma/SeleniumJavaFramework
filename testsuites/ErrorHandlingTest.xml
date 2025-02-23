@@ -11,6 +11,7 @@
     </classes>
   </test> <!-- Test -->
     <test thread-count="5" name="Login Error Vlidatiobs">
+
     <classes>
       <class name="Kane.SeleniumJavaFramework.tests.ErrorValidationsTest"/>
     </classes>
