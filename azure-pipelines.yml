@@ -4,7 +4,7 @@ trigger:
 pool:
   name: MyPersonalPC
   demands:
-    - Agent.Name -equals LenovoThinkpad
+    - Agent.Name -equals legion
 parameters:
 - name: browserName
   displayName: 'Browser Name'
