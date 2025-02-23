@@ -20,4 +20,8 @@ public class ErrorValidationsTest extends BaseTest {
 		Assert.assertEquals(landingPage.verifyEmailErrorToast(), true);
 	}
 
+	@Test(groups={"ErrorHandling"},priority=1)
+	public void TestMethod() {
+		System.out.println("Hello World");
+	}
 }
