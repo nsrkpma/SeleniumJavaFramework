@@ -2,9 +2,9 @@ trigger:
 - main
 
 pool:
-  name: MyPersonalPC
+  name: Default
   demands:
-    - Agent.Name -equals LenovoThinkpad
+    - Agent.Name -equals ThinkpadE14
 
 parameters:
 - name: browserName
