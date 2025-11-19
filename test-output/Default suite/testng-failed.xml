@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Kane.SeleniumJavaFramework.cucumber.TestNGTestRunner">
+      <class name="Kane.SeleniumJavaFramework.tests.SubmitOrderTest">
         <methods>
-          <include name="setUpClass"/>
-          <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
+          <include name="endToendTest" invocation-numbers="1"/>
+          <include name="teardown"/>
+          <include name="launchApplication"/>
         </methods>
-      </class> <!-- Kane.SeleniumJavaFramework.cucumber.TestNGTestRunner -->
+      </class> <!-- Kane.SeleniumJavaFramework.tests.SubmitOrderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
