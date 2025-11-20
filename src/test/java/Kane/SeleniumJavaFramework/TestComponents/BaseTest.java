@@ -30,11 +30,13 @@ public class BaseTest {
 	
 	public WebDriver driver;
 	public LandingPage landingPage ;
+	Properties prop = new Properties();
 	public WebDriver initializedriver() throws IOException {
 		
 		
-		Properties prop = new Properties();
-		FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\Kane\\SeleniumJavaFramework\\resources\\GlobalData.properties");
+		
+		String propertiesfilePath=System.getProperty("user.dir")+File.separator+"src"+File.separator+"main"+File.separator+"java"+File.separator+"Kane"+File.separator+"SeleniumJavaFramework"+File.separator+"resources"+File.separator+"GlobalData.properties";
+		FileInputStream fis=new FileInputStream(propertiesfilePath);
 		prop.load(fis);
 		String browserName=System.getProperty("browser")!=null ?System.getProperty("browser"):prop.getProperty("browser");
 		
@@ -69,7 +71,7 @@ public class BaseTest {
 	public LandingPage launchApplication() throws IOException{
 		driver=initializedriver();
 		landingPage = new LandingPage(driver);
-		landingPage.goToUrl("https://rahulshettyacademy.com/client");
+		landingPage.goToUrl(prop.getProperty("url"));
 		return landingPage;
 	}
 	
@@ -79,7 +81,7 @@ public class BaseTest {
 	}
 	public String getScreenshot(String testCaseName,WebDriver driver) throws IOException {
 		File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File file=new File(System.getProperty("user.dir")+"\\Reports\\"+testCaseName+".png");
+		File file=new File(System.getProperty("user.dir")+File.separator+"Reports"+File.separator+testCaseName+".png");
 		FileUtils.copyFile(src,file);
 		return file.getPath();
 		
