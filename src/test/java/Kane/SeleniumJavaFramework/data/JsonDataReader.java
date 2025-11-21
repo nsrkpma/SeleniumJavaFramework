@@ -11,7 +11,7 @@ import org.apache.commons.io.FileUtils;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class DataReader {
+public class JsonDataReader {
     
     public List<HashMap<String, String>> getJsonDataToMap() throws IOException {
         String content = FileUtils.readFileToString(new File(System.getProperty("user.dir") + "\\src\\test\\java\\Kane\\SeleniumJavaFramework\\data\\PurchaseOrder.json"),

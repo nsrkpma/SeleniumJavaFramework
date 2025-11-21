@@ -1,62 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="1" total="7" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-20T08:17:57 IST" name="Suite" finished-at="2025-11-20T08:18:35 IST" duration-ms="37985">
+  <suite started-at="2025-11-21T13:09:05 IST" name="Suite" finished-at="2025-11-21T13:09:27 IST" duration-ms="21915">
     <groups>
       <group name="ErrorHandling">
-        <method signature="ErrorValidationsTest.incorrectEmailPasswordErrorValidation()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@d554c5f]" name="incorrectEmailPasswordErrorValidation" class="Kane.SeleniumJavaFramework.tests.ErrorValidationsTest"/>
-        <method signature="ErrorValidationsTest.TestMethod()[pri:1, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@d554c5f]" name="TestMethod" class="Kane.SeleniumJavaFramework.tests.ErrorValidationsTest"/>
-        <method signature="ErrorValidationsTest.invalidEmailValidation()[pri:1, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@d554c5f]" name="invalidEmailValidation" class="Kane.SeleniumJavaFramework.tests.ErrorValidationsTest"/>
+        <method signature="ErrorValidationsTest.incorrectEmailPasswordErrorValidation()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@6a8658ff]" name="incorrectEmailPasswordErrorValidation" class="Kane.SeleniumJavaFramework.tests.ErrorValidationsTest"/>
+        <method signature="ErrorValidationsTest.TestMethod()[pri:1, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@6a8658ff]" name="TestMethod" class="Kane.SeleniumJavaFramework.tests.ErrorValidationsTest"/>
+        <method signature="ErrorValidationsTest.invalidEmailValidation()[pri:1, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@6a8658ff]" name="invalidEmailValidation" class="Kane.SeleniumJavaFramework.tests.ErrorValidationsTest"/>
       </group> <!-- ErrorHandling -->
     </groups>
-    <test started-at="2025-11-20T08:17:57 IST" name="Login Error Vlidatiobs" finished-at="2025-11-20T08:18:09 IST" duration-ms="11984">
-      <class name="Kane.SeleniumJavaFramework.tests.ErrorValidationsTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@d554c5f]" started-at="2025-11-20T08:17:57 IST" name="launchApplication" finished-at="2025-11-20T08:18:01 IST" duration-ms="4431" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="incorrectEmailPasswordErrorValidation()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@d554c5f]" started-at="2025-11-20T08:18:01 IST" name="incorrectEmailPasswordErrorValidation" finished-at="2025-11-20T08:18:02 IST" duration-ms="700" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- incorrectEmailPasswordErrorValidation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@d554c5f]" started-at="2025-11-20T08:18:02 IST" name="teardown" finished-at="2025-11-20T08:18:02 IST" duration-ms="88" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@d554c5f]" started-at="2025-11-20T08:18:02 IST" name="launchApplication" finished-at="2025-11-20T08:18:05 IST" duration-ms="2615" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="TestMethod()[pri:1, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@d554c5f]" started-at="2025-11-20T08:18:05 IST" name="TestMethod" finished-at="2025-11-20T08:18:05 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestMethod -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@d554c5f]" started-at="2025-11-20T08:18:05 IST" name="teardown" finished-at="2025-11-20T08:18:05 IST" duration-ms="99" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@d554c5f]" started-at="2025-11-20T08:18:05 IST" name="launchApplication" finished-at="2025-11-20T08:18:08 IST" duration-ms="3525" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="invalidEmailValidation()[pri:1, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@d554c5f]" started-at="2025-11-20T08:18:08 IST" name="invalidEmailValidation" finished-at="2025-11-20T08:18:09 IST" duration-ms="364" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidEmailValidation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@d554c5f]" started-at="2025-11-20T08:18:09 IST" name="teardown" finished-at="2025-11-20T08:18:09 IST" duration-ms="77" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- Kane.SeleniumJavaFramework.tests.ErrorValidationsTest -->
-    </test> <!-- Login Error Vlidatiobs -->
-    <test started-at="2025-11-20T08:17:57 IST" name="End to End Test" finished-at="2025-11-20T08:18:35 IST" duration-ms="37985">
+    <test started-at="2025-11-21T13:09:05 IST" name="Latest" finished-at="2025-11-21T13:09:27 IST" duration-ms="21915">
       <class name="Kane.SeleniumJavaFramework.tests.SubmitOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@5b247367]" started-at="2025-11-20T08:17:58 IST" name="launchApplication" finished-at="2025-11-20T08:18:03 IST" duration-ms="5020" status="PASS">
+        <test-method is-config="true" signature="loadDBProps()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@15888343]" started-at="2025-11-21T13:09:05 IST" name="loadDBProps" finished-at="2025-11-21T13:09:05 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadDBProps -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@15888343]" started-at="2025-11-21T13:09:06 IST" name="launchApplication" finished-at="2025-11-21T13:09:09 IST" duration-ms="2893" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="endToendTest(java.util.HashMap)[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@5b247367]" started-at="2025-11-20T08:18:03 IST" name="endToendTest" data-provider="getDataMap" finished-at="2025-11-20T08:18:06 IST" duration-ms="3754" status="PASS">
+        <test-method signature="endToendTest(java.util.HashMap)[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@15888343]" started-at="2025-11-21T13:09:09 IST" name="endToendTest" data-provider="getDataMap" finished-at="2025-11-21T13:09:12 IST" duration-ms="3158" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -67,137 +31,99 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endToendTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@5b247367]" started-at="2025-11-20T08:18:06 IST" name="teardown" finished-at="2025-11-20T08:18:07 IST" duration-ms="111" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@15888343]" started-at="2025-11-21T13:09:12 IST" name="teardown" finished-at="2025-11-21T13:09:12 IST" duration-ms="102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@5b247367]" started-at="2025-11-20T08:18:07 IST" name="launchApplication" finished-at="2025-11-20T08:18:09 IST" duration-ms="2542" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@15888343]" started-at="2025-11-21T13:09:12 IST" name="launchApplication" finished-at="2025-11-21T13:09:15 IST" duration-ms="2752" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method retried="true" signature="endToendTest(java.util.HashMap)[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@5b247367]" started-at="2025-11-20T08:18:09 IST" name="endToendTest" data-provider="getDataMap" finished-at="2025-11-20T08:18:20 IST" duration-ms="10391" status="SKIP">
+        <test-method signature="endToendTest(java.util.HashMap)[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@15888343]" started-at="2025-11-21T13:09:15 IST" name="endToendTest" data-provider="getDataMap" finished-at="2025-11-21T13:09:18 IST" duration-ms="3196" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{productname=ADDIDAS, password=Java, email=Kane@1223}]]>
+                <![CDATA[{productname=ADIDAS ORIGINAL, password=Kane@1213, email=Kane@gmail.com}]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: .mb-3 (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\nsrkp\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60195}, goog:processID: 17696, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60195/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 64d025b19ad69a69286f56d5756da022]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .mb-3 (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\nsrkp\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60195}, goog:processID: 17696, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60195/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 64d025b19ad69a69286f56d5756da022
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at Kane.SeleniumJavaFramework.AbstractComponents.AbstarctComponent.waitForElementToAppear(AbstarctComponent.java:21)
-at Kane.SeleniumJavaFramework.pageobjects.ProductCatalogue.getProductList(ProductCatalogue.java:39)
-at Kane.SeleniumJavaFramework.tests.SubmitOrderTest.endToendTest(SubmitOrderTest.java:32)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
-at java.base/java.lang.Thread.run(Thread.java:1474)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endToendTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@5b247367]" started-at="2025-11-20T08:18:20 IST" name="teardown" finished-at="2025-11-20T08:18:20 IST" duration-ms="273" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@15888343]" started-at="2025-11-21T13:09:18 IST" name="teardown" finished-at="2025-11-21T13:09:18 IST" duration-ms="166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@5b247367]" started-at="2025-11-20T08:18:20 IST" name="launchApplication" finished-at="2025-11-20T08:18:24 IST" duration-ms="3727" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@15888343]" started-at="2025-11-21T13:09:18 IST" name="launchApplication" finished-at="2025-11-21T13:09:21 IST" duration-ms="2817" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="endToendTest(java.util.HashMap)[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@5b247367]" started-at="2025-11-20T08:18:24 IST" name="endToendTest" data-provider="getDataMap" finished-at="2025-11-20T08:18:34 IST" duration-ms="10515" status="FAIL">
+        <test-method signature="endToendTest(java.util.HashMap)[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@15888343]" started-at="2025-11-21T13:09:21 IST" name="endToendTest" data-provider="getDataMap" finished-at="2025-11-21T13:09:24 IST" duration-ms="3026" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{productname=ADDIDAS, password=Java, email=Kane@1223}]]>
+                <![CDATA[{productname=IPHONE 13 PRO, password=Kane@1213, email=Kane@gmail.com}]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: .mb-3 (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\nsrkp\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63039}, goog:processID: 26516, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63039/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7825a347094be337a4aaa42675f62f98]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .mb-3 (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\nsrkp\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63039}, goog:processID: 26516, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63039/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7825a347094be337a4aaa42675f62f98
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at Kane.SeleniumJavaFramework.AbstractComponents.AbstarctComponent.waitForElementToAppear(AbstarctComponent.java:21)
-at Kane.SeleniumJavaFramework.pageobjects.ProductCatalogue.getProductList(ProductCatalogue.java:39)
-at Kane.SeleniumJavaFramework.tests.SubmitOrderTest.endToendTest(SubmitOrderTest.java:32)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
-at java.base/java.lang.Thread.run(Thread.java:1474)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endToendTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@5b247367]" started-at="2025-11-20T08:18:35 IST" name="teardown" finished-at="2025-11-20T08:18:35 IST" duration-ms="200" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@15888343]" started-at="2025-11-21T13:09:24 IST" name="teardown" finished-at="2025-11-21T13:09:24 IST" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@15888343]" started-at="2025-11-21T13:09:24 IST" name="launchApplication" finished-at="2025-11-21T13:09:27 IST" duration-ms="2528" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="orderHistory()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@15888343]" started-at="2025-11-21T13:09:27 IST" name="orderHistory" finished-at="2025-11-21T13:09:27 IST" depends-on-methods="Kane.SeleniumJavaFramework.tests.SubmitOrderTest.endToendTest" duration-ms="759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderHistory -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@15888343]" started-at="2025-11-21T13:09:27 IST" name="teardown" finished-at="2025-11-21T13:09:27 IST" duration-ms="101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- Kane.SeleniumJavaFramework.tests.SubmitOrderTest -->
-    </test> <!-- End to End Test -->
+      <class name="Kane.SeleniumJavaFramework.tests.ErrorValidationsTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@6a8658ff]" started-at="2025-11-21T13:09:05 IST" name="launchApplication" finished-at="2025-11-21T13:09:09 IST" duration-ms="3510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="incorrectEmailPasswordErrorValidation()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@6a8658ff]" started-at="2025-11-21T13:09:09 IST" name="incorrectEmailPasswordErrorValidation" finished-at="2025-11-21T13:09:09 IST" duration-ms="462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- incorrectEmailPasswordErrorValidation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@6a8658ff]" started-at="2025-11-21T13:09:09 IST" name="teardown" finished-at="2025-11-21T13:09:10 IST" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@6a8658ff]" started-at="2025-11-21T13:09:10 IST" name="launchApplication" finished-at="2025-11-21T13:09:13 IST" duration-ms="2990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="TestMethod()[pri:1, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@6a8658ff]" started-at="2025-11-21T13:09:13 IST" name="TestMethod" finished-at="2025-11-21T13:09:13 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestMethod -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@6a8658ff]" started-at="2025-11-21T13:09:13 IST" name="teardown" finished-at="2025-11-21T13:09:13 IST" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@6a8658ff]" started-at="2025-11-21T13:09:13 IST" name="launchApplication" finished-at="2025-11-21T13:09:16 IST" duration-ms="2875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="invalidEmailValidation()[pri:1, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@6a8658ff]" started-at="2025-11-21T13:09:16 IST" name="invalidEmailValidation" finished-at="2025-11-21T13:09:16 IST" duration-ms="368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidEmailValidation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@6a8658ff]" started-at="2025-11-21T13:09:16 IST" name="teardown" finished-at="2025-11-21T13:09:16 IST" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Kane.SeleniumJavaFramework.tests.ErrorValidationsTest -->
+    </test> <!-- Latest -->
   </suite> <!-- Suite -->
 </testng-results>

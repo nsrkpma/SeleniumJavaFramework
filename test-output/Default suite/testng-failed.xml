@@ -5,7 +5,8 @@
     <classes>
       <class name="Kane.SeleniumJavaFramework.tests.SubmitOrderTest">
         <methods>
-          <include name="endToendTest" invocation-numbers="1"/>
+          <include name="endToendTest" invocation-numbers="1 2"/>
+          <include name="loadDBProps"/>
           <include name="teardown"/>
           <include name="launchApplication"/>
         </methods>
