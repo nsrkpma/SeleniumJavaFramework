@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\MyData\eclipse\SeleniumJavaFramework\testng.xml</span>
+                    <span>C:\MyData\eclipse\SeleniumJavaFramework\testsuites\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,40 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">10 methods, 2 failed,  1 skipped,  7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Kane.SeleniumJavaFramework.tests.SubmitOrderTest" class="method navigator-link" hash-for-method="endToendTest({productname=QWERTY, password=Kane@1213, email=Kane@gmail.com})">endToendTest({productname=QWERTY, password=Kane@1213, email=Kane@gmail.com})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Kane.SeleniumJavaFramework.tests.SubmitOrderTest" class="method navigator-link" hash-for-method="orderHistory">orderHistory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Kane.SeleniumJavaFramework.tests.SubmitOrderTest" class="method navigator-link" hash-for-method="endToendTest({productname=QWERTY, password=Kane@1213, email=Kane@gmail.com})">endToendTest({productname=QWERTY, password=Kane@1213, email=Kane@gmail.com})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -133,7 +166,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Kane.SeleniumJavaFramework.tests.SubmitOrderTest" class="method navigator-link" hash-for-method="orderHistory">orderHistory</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Kane.SeleniumJavaFramework.tests.SampleTest" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -148,34 +181,28 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">Kane.SeleniumJavaFramework.tests.SubmitOrderTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="endToendTest({productname=IPHONE 13 PRO, password=Kane@1213, email=Kane@gmail.com})">
-                  </a> <!-- endToendTest({productname=IPHONE 13 PRO, password=Kane@1213, email=Kane@gmail.com}) -->
+                  <a name="endToendTest({productname=QWERTY, password=Kane@1213, email=Kane@gmail.com})">
+                  </a> <!-- endToendTest({productname=QWERTY, password=Kane@1213, email=Kane@gmail.com}) -->
                   <span class="method-name">endToendTest</span>
-                  <span class="parameters">({productname=IPHONE 13 PRO, password=Kane@1213, email=Kane@gmail.com})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="endToendTest({productname=ZARA COAT 3, password=Kane@1213, email=Kane@gmail.com})">
-                  </a> <!-- endToendTest({productname=ZARA COAT 3, password=Kane@1213, email=Kane@gmail.com}) -->
-                  <span class="method-name">endToendTest</span>
-                  <span class="parameters">({productname=ZARA COAT 3, password=Kane@1213, email=Kane@gmail.com})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="endToendTest({productname=ADIDAS ORIGINAL, password=Kane@1213, email=Kane@gmail.com})">
-                  </a> <!-- endToendTest({productname=ADIDAS ORIGINAL, password=Kane@1213, email=Kane@gmail.com}) -->
-                  <span class="method-name">endToendTest</span>
-                  <span class="parameters">({productname=ADIDAS ORIGINAL, password=Kane@1213, email=Kane@gmail.com})</span>
+                  <span class="parameters">({productname=QWERTY, password=Kane@1213, email=Kane@gmail.com})</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because &quot;prod&quot; is null
+	at Kane.SeleniumJavaFramework.pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:52)
+	at Kane.SeleniumJavaFramework.tests.SubmitOrderTest.endToendTest(SubmitOrderTest.java:35)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 11 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -183,6 +210,56 @@
                   <a name="orderHistory">
                   </a> <!-- orderHistory -->
                   <span class="method-name">orderHistory</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at Kane.SeleniumJavaFramework.tests.SubmitOrderTest.orderHistory(SubmitOrderTest.java:50)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Kane.SeleniumJavaFramework.tests.SubmitOrderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="endToendTest({productname=QWERTY, password=Kane@1213, email=Kane@gmail.com})">
+                  </a> <!-- endToendTest({productname=QWERTY, password=Kane@1213, email=Kane@gmail.com}) -->
+                  <span class="method-name">endToendTest</span>
+                  <span class="parameters">({productname=QWERTY, password=Kane@1213, email=Kane@gmail.com})</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because &quot;prod&quot; is null
+	at Kane.SeleniumJavaFramework.pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:52)
+	at Kane.SeleniumJavaFramework.tests.SubmitOrderTest.endToendTest(SubmitOrderTest.java:35)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 11 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Kane.SeleniumJavaFramework.tests.SampleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -216,10 +293,42 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Kane.SeleniumJavaFramework.tests.SubmitOrderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="endToendTest({productname=IPHONE 13 PRO, password=Kane@1213, email=Kane@gmail.com})">
+                  </a> <!-- endToendTest({productname=IPHONE 13 PRO, password=Kane@1213, email=Kane@gmail.com}) -->
+                  <span class="method-name">endToendTest</span>
+                  <span class="parameters">({productname=IPHONE 13 PRO, password=Kane@1213, email=Kane@gmail.com})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="endToendTest({productname=ZARA COAT 3, password=Kane@1213, email=Kane@gmail.com})">
+                  </a> <!-- endToendTest({productname=ZARA COAT 3, password=Kane@1213, email=Kane@gmail.com}) -->
+                  <span class="method-name">endToendTest</span>
+                  <span class="parameters">({productname=ZARA COAT 3, password=Kane@1213, email=Kane@gmail.com})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="endToendTest({productname=ADIDAS ORIGINAL, password=Kane@1213, email=Kane@gmail.com})">
+                  </a> <!-- endToendTest({productname=ADIDAS ORIGINAL, password=Kane@1213, email=Kane@gmail.com}) -->
+                  <span class="method-name">endToendTest</span>
+                  <span class="parameters">({productname=ADIDAS ORIGINAL, password=Kane@1213, email=Kane@gmail.com})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\MyData\eclipse\SeleniumJavaFramework\testng.xml</span>
+            <span class="header-content">C:\MyData\eclipse\SeleniumJavaFramework\testsuites\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -227,12 +336,14 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite parallel=&quot;classes&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;Kane.SeleniumJavaFramework.TestComponents.Listeners&quot;/&gt;
+    &lt;listener class-name=&quot;io.qameta.allure.testng.AllureTestNg&quot;/&gt;
+    &lt;listener class-name=&quot;Kane.SeleniumJavaFramework.TestComponents.ListenersTwo&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;10&quot; parallel=&quot;classes&quot; name=&quot;Latest&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Kane.SeleniumJavaFramework.tests.SubmitOrderTest&quot;/&gt;
       &lt;class name=&quot;Kane.SeleniumJavaFramework.tests.ErrorValidationsTest&quot;/&gt;
+      &lt;class name=&quot;Kane.SeleniumJavaFramework.tests.SampleTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Latest --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -246,7 +357,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Latest (2 classes)</span>
+                <span class="test-name">Latest (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -272,6 +383,14 @@
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">POC</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">test1</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -288,40 +407,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'endToendTest')
 data.setCell(0, 2, 'Kane.SeleniumJavaFramework.tests.SubmitOrderTest')
-data.setCell(0, 3, 3196);
+data.setCell(0, 3, 3857);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'endToendTest')
 data.setCell(1, 2, 'Kane.SeleniumJavaFramework.tests.SubmitOrderTest')
-data.setCell(1, 3, 3158);
+data.setCell(1, 3, 3065);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'endToendTest')
 data.setCell(2, 2, 'Kane.SeleniumJavaFramework.tests.SubmitOrderTest')
-data.setCell(2, 3, 3026);
+data.setCell(2, 3, 2954);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'orderHistory')
 data.setCell(3, 2, 'Kane.SeleniumJavaFramework.tests.SubmitOrderTest')
-data.setCell(3, 3, 759);
+data.setCell(3, 3, 836);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'incorrectEmailPasswordErrorValidation')
-data.setCell(4, 2, 'Kane.SeleniumJavaFramework.tests.ErrorValidationsTest')
-data.setCell(4, 3, 462);
+data.setCell(4, 1, 'endToendTest')
+data.setCell(4, 2, 'Kane.SeleniumJavaFramework.tests.SubmitOrderTest')
+data.setCell(4, 3, 697);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'invalidEmailValidation')
-data.setCell(5, 2, 'Kane.SeleniumJavaFramework.tests.ErrorValidationsTest')
-data.setCell(5, 3, 368);
+data.setCell(5, 1, 'endToendTest')
+data.setCell(5, 2, 'Kane.SeleniumJavaFramework.tests.SubmitOrderTest')
+data.setCell(5, 3, 666);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'TestMethod')
+data.setCell(6, 1, 'incorrectEmailPasswordErrorValidation')
 data.setCell(6, 2, 'Kane.SeleniumJavaFramework.tests.ErrorValidationsTest')
-data.setCell(6, 3, 14);
+data.setCell(6, 3, 439);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'invalidEmailValidation')
+data.setCell(7, 2, 'Kane.SeleniumJavaFramework.tests.ErrorValidationsTest')
+data.setCell(7, 3, 387);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'test1')
+data.setCell(8, 2, 'Kane.SeleniumJavaFramework.tests.SampleTest')
+data.setCell(8, 3, 86);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TestMethod')
+data.setCell(9, 2, 'Kane.SeleniumJavaFramework.tests.ErrorValidationsTest')
+data.setCell(9, 3, 6);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -364,108 +495,137 @@ return data;
               <div class="chronological-class-name">Kane.SeleniumJavaFramework.tests.ErrorValidationsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">46 ms</span>
+                <span class="method-start">68 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Kane.SeleniumJavaFramework.tests.SampleTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">68 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Kane.SeleniumJavaFramework.tests.SubmitOrderTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">280 ms</span>
+                <span class="method-start">444 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">endToendTest({productname=ZARA COAT 3, password=Kane@1213, email=Kane@gmail.com})</span>
-                <span class="method-start">3174 ms</span>
+                <span class="method-start">3745 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Kane.SeleniumJavaFramework.tests.ErrorValidationsTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">incorrectEmailPasswordErrorValidation</span>
-                <span class="method-start">3557 ms</span>
+                <span class="method-start">3754 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">4019 ms</span>
+                <span class="method-start">4196 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">4140 ms</span>
+                <span class="method-start">4360 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Kane.SeleniumJavaFramework.tests.SubmitOrderTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">6335 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApplication</span>
-                <span class="method-start">6438 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Kane.SeleniumJavaFramework.tests.ErrorValidationsTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">TestMethod</span>
-                <span class="method-start">7131 ms</span>
+                <span class="method-start">5994 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">7156 ms</span>
+                <span class="method-start">6006 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">7344 ms</span>
+                <span class="method-start">6148 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Kane.SeleniumJavaFramework.tests.SubmitOrderTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">endToendTest({productname=ADIDAS ORIGINAL, password=Kane@1213, email=Kane@gmail.com})</span>
-                <span class="method-start">9190 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">7618 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">7806 ms</span>
+              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Kane.SeleniumJavaFramework.tests.ErrorValidationsTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">invalidEmailValidation</span>
-                <span class="method-start">10220 ms</span>
+                <span class="method-start">8959 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">10590 ms</span>
+                <span class="method-start">9351 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Kane.SeleniumJavaFramework.tests.SubmitOrderTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">endToendTest({productname=ADIDAS ORIGINAL, password=Kane@1213, email=Kane@gmail.com})</span>
+                <span class="method-start">10560 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">12388 ms</span>
+                <span class="method-start">13518 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">12556 ms</span>
+                <span class="method-start">13627 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">endToendTest({productname=IPHONE 13 PRO, password=Kane@1213, email=Kane@gmail.com})</span>
-                <span class="method-start">15374 ms</span>
+                <span class="method-start">15085 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">18400 ms</span>
+                <span class="method-start">18168 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">18534 ms</span>
+                <span class="method-start">18318 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">orderHistory</span>
-                <span class="method-start">21062 ms</span>
+                <span class="method-name">endToendTest({productname=QWERTY, password=Kane@1213, email=Kane@gmail.com})</span>
+                <span class="method-start">21118 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">21823 ms</span>
+                <span class="method-start">21784 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">21894 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">endToendTest({productname=QWERTY, password=Kane@1213, email=Kane@gmail.com})</span>
+                <span class="method-start">25711 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">26858 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">27012 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">orderHistory</span>
+                <span class="method-start">28460 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">29566 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,0 +1,8 @@
+Kane\SeleniumJavaFramework\AbstractComponents\AbstarctComponent.class
+Kane\SeleniumJavaFramework\resources\ExtentReporterNg.class
+Kane\SeleniumJavaFramework\pageobjects\CartPage.class
+Kane\SeleniumJavaFramework\pageobjects\LandingPage.class
+Kane\SeleniumJavaFramework\pageobjects\ProductCatalogue.class
+Kane\SeleniumJavaFramework\pageobjects\CheckoutPage.class
+Kane\SeleniumJavaFramework\pageobjects\ConfirmationPage.class
+Kane\SeleniumJavaFramework\pageobjects\OrderPage.class
