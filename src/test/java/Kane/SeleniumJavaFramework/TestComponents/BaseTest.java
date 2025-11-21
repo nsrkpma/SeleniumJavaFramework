@@ -20,6 +20,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -27,31 +28,38 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import Kane.SeleniumJavaFramework.pageobjects.LandingPage;
 
 public class BaseTest {
-	
+
 	public WebDriver driver;
-	public LandingPage landingPage ;
+	public LandingPage landingPage;
 	Properties prop = new Properties();
+
+	// --- DB Properties ---
+	public String dbUrl;
+	public String dbUser;
+	public String dbPassword;
+	public String propertiesfilePath = System.getProperty("user.dir") + File.separator + "src" + File.separator + "main"
+			+ File.separator + "java" + File.separator + "Kane" + File.separator + "SeleniumJavaFramework"
+			+ File.separator + "resources" + File.separator + "GlobalData.properties";
+
+	// Method to initialize the driver
 	public WebDriver initializedriver() throws IOException {
-		
-		
-		
-		String propertiesfilePath=System.getProperty("user.dir")+File.separator+"src"+File.separator+"main"+File.separator+"java"+File.separator+"Kane"+File.separator+"SeleniumJavaFramework"+File.separator+"resources"+File.separator+"GlobalData.properties";
-		FileInputStream fis=new FileInputStream(propertiesfilePath);
+
+		FileInputStream fis = new FileInputStream(propertiesfilePath);
 		prop.load(fis);
-		String browserName=System.getProperty("browser")!=null ?System.getProperty("browser"):prop.getProperty("browser");
-		
-		if(browserName.contains("chrome")) {
-			ChromeOptions options=new ChromeOptions();
-			if(browserName.contains("headless")) {
-			options.addArguments("headless");
+
+		String browserName = System.getProperty("browser") != null ? System.getProperty("browser")
+				: prop.getProperty("browser");
+
+		if (browserName.contains("chrome")) {
+			ChromeOptions options = new ChromeOptions();
+			if (browserName.contains("headless")) {
+				options.addArguments("headless");
 			}
 			driver = new ChromeDriver(options);
-			driver.manage().window().setSize(new Dimension(1440,900)); //full screen
-		}
-		else if(browserName.equalsIgnoreCase("edge")) {
+			driver.manage().window().setSize(new Dimension(1440, 900)); // full screen
+		} else if (browserName.equalsIgnoreCase("edge")) {
 			driver = new EdgeDriver();
-		}
-		else if(browserName.equalsIgnoreCase("firefox")) {
+		} else if (browserName.equalsIgnoreCase("firefox")) {
 			driver = new FirefoxDriver();
 		}
 
@@ -59,32 +67,46 @@ public class BaseTest {
 		driver.manage().window().maximize();
 		return driver;
 	}
-	   public List<HashMap<String, String>> getJsonDataToMap(String filePath) throws IOException {
-	        String content = FileUtils.readFileToString(new File(filePath),
-	                StandardCharsets.UTF_8);
-	        ObjectMapper mapper = new ObjectMapper();
-	        List<HashMap<String, String>> data = mapper.readValue(content, new TypeReference<List<HashMap<String, String>>>() {});
-	        return data;
-	    }
-	
-	@BeforeMethod(alwaysRun=true)
-	public LandingPage launchApplication() throws IOException{
-		driver=initializedriver();
+
+	public List<HashMap<String, String>> getJsonDataToMap(String filePath) throws IOException {
+		String content = FileUtils.readFileToString(new File(filePath), StandardCharsets.UTF_8);
+		ObjectMapper mapper = new ObjectMapper();
+		List<HashMap<String, String>> data = mapper.readValue(content,
+				new TypeReference<List<HashMap<String, String>>>() {
+				});
+		return data;
+	}
+
+	@BeforeSuite
+	public void loadDBProps() throws IOException {
+
+		FileInputStream fis = new FileInputStream(propertiesfilePath);
+		prop.load(fis);
+
+		dbUrl = prop.getProperty("db.url");
+		dbUser = prop.getProperty("db.user");
+		dbPassword = prop.getProperty("db.password");
+
+	}
+
+	@BeforeMethod(alwaysRun = true)
+	public LandingPage launchApplication() throws IOException {
+		driver = initializedriver();
 		landingPage = new LandingPage(driver);
 		landingPage.goToUrl(prop.getProperty("url"));
 		return landingPage;
 	}
-	
-	@AfterMethod(alwaysRun=true)
+
+	@AfterMethod(alwaysRun = true)
 	public void teardown() {
 		driver.close();
 	}
-	public String getScreenshot(String testCaseName,WebDriver driver) throws IOException {
-		File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File file=new File(System.getProperty("user.dir")+File.separator+"Reports"+File.separator+testCaseName+".png");
-		FileUtils.copyFile(src,file);
-		return file.getPath();
-		
-	}
 
+	public String getScreenshot(String testCaseName, WebDriver driver) throws IOException {
+		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		File file = new File(
+				System.getProperty("user.dir") + File.separator + "Reports" + File.separator + testCaseName + ".png");
+		FileUtils.copyFile(src, file);
+		return file.getPath();
+	}
 }

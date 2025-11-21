@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 
 import Kane.SeleniumJavaFramework.TestComponents.BaseTest;
 import Kane.SeleniumJavaFramework.TestComponents.Retry;
+import Kane.SeleniumJavaFramework.data.DBUtility;
 import Kane.SeleniumJavaFramework.data.ExcelReader;
 import Kane.SeleniumJavaFramework.pageobjects.CartPage;
 import Kane.SeleniumJavaFramework.pageobjects.CheckoutPage;
@@ -42,7 +43,7 @@ public class SubmitOrderTest extends BaseTest {
 		Assert.assertEquals(confirmationPage.verifyMessage(), "THANKYOU FOR THE ORDER.");
 	}
 
-	@Test(dependsOnMethods = { "endToendTest" }, enabled = flase)
+	@Test(dependsOnMethods = { "endToendTest" }, enabled = true)
 	public void orderHistory() {
 		ProductCatalogue productCatalogue = landingPage.login("Kane@gmail.com", "Kane@1213");
 		OrderPage orderPage = productCatalogue.viewOrderDetails();
@@ -72,46 +73,51 @@ public class SubmitOrderTest extends BaseTest {
 	 * }
 	 */
 	
+	/*
+	 * @DataProvider public Object[][] getDataMap() throws IOException {
+	 * 
+	 * String excelPath = System.getProperty("user.dir") + File.separator + "src" +
+	 * File.separator + "test" + File.separator + "java" + File.separator + "Kane" +
+	 * File.separator + "SeleniumJavaFramework" + File.separator + "data" +
+	 * File.separator + "PurchaseOrder.xlsx";
+	 * 
+	 * ExcelReader excelReader = new ExcelReader();
+	 * 
+	 * List<HashMap<String, String>> data = excelReader.getExcelData(excelPath,
+	 * "Sheet1");
+	 * 
+	 * // ---------- PRINT DATA TO CONSOLE ----------
+	 * System.out.println("===== Excel Data Loaded From Sheet1 ====="); for (int row
+	 * = 0; row < data.size(); row++) {
+	 * 
+	 * HashMap<String, String> map = data.get(row);
+	 * 
+	 * System.out.println("Row " + (row + 1) + " data:");
+	 * 
+	 * for (String key : map.keySet()) { System.out.println("   " + key + " = " +
+	 * map.get(key)); }
+	 * 
+	 * System.out.println("----------------------------------------"); }
+	 * System.out.println("==========================================");
+	 * 
+	 * // ---------- RETURN DATA TO TEST ---------- Object[][] result = new
+	 * Object[data.size()][1];
+	 * 
+	 * for (int i = 0; i < data.size(); i++) { result[i][0] = data.get(i); }
+	 * 
+	 * return result; }
+	 */
 	@DataProvider
-	public Object[][] getDataMap() throws IOException {
+	public Object[][] getDataMap() {
+	    // Keep query separate here
+	    String dbQuery = "SELECT email, password, productname FROM test_data";
 
-	    String excelPath = System.getProperty("user.dir")
-	            + File.separator + "src"
-	            + File.separator + "test"
-	            + File.separator + "java"
-	            + File.separator + "Kane"
-	            + File.separator + "SeleniumJavaFramework"
-	            + File.separator + "data"
-	            + File.separator + "PurchaseOrder.xlsx";
+	    List<HashMap<String, String>> data = DBUtility.getTestData(dbUrl, dbUser, dbPassword, dbQuery);
 
-	    ExcelReader excelReader = new ExcelReader();
-
-	    List<HashMap<String, String>> data =
-	            excelReader.getExcelData(excelPath, "Sheet1");
-
-	    // ---------- PRINT DATA TO CONSOLE ----------
-	    System.out.println("===== Excel Data Loaded From Sheet1 =====");
-	    for (int row = 0; row < data.size(); row++) {
-
-	        HashMap<String, String> map = data.get(row);
-
-	        System.out.println("Row " + (row + 1) + " data:");
-
-	        for (String key : map.keySet()) {
-	            System.out.println("   " + key + " = " + map.get(key));
-	        }
-
-	        System.out.println("----------------------------------------");
-	    }
-	    System.out.println("==========================================");
-
-	    // ---------- RETURN DATA TO TEST ----------
 	    Object[][] result = new Object[data.size()][1];
-
 	    for (int i = 0; i < data.size(); i++) {
 	        result[i][0] = data.get(i);
 	    }
-
 	    return result;
 	}
 
