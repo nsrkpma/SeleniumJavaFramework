@@ -1,26 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results retried="1" ignored="0" total="10" passed="7" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-21T13:09:05 IST" name="Suite" finished-at="2025-11-21T13:09:27 IST" duration-ms="21915">
+  <suite started-at="2025-11-21T17:50:48 IST" name="Suite" finished-at="2025-11-21T17:51:18 IST" duration-ms="29641">
     <groups>
       <group name="ErrorHandling">
-        <method signature="ErrorValidationsTest.incorrectEmailPasswordErrorValidation()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@6a8658ff]" name="incorrectEmailPasswordErrorValidation" class="Kane.SeleniumJavaFramework.tests.ErrorValidationsTest"/>
-        <method signature="ErrorValidationsTest.TestMethod()[pri:1, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@6a8658ff]" name="TestMethod" class="Kane.SeleniumJavaFramework.tests.ErrorValidationsTest"/>
-        <method signature="ErrorValidationsTest.invalidEmailValidation()[pri:1, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@6a8658ff]" name="invalidEmailValidation" class="Kane.SeleniumJavaFramework.tests.ErrorValidationsTest"/>
+        <method signature="ErrorValidationsTest.incorrectEmailPasswordErrorValidation()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@16fdec90]" name="incorrectEmailPasswordErrorValidation" class="Kane.SeleniumJavaFramework.tests.ErrorValidationsTest"/>
+        <method signature="ErrorValidationsTest.TestMethod()[pri:1, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@16fdec90]" name="TestMethod" class="Kane.SeleniumJavaFramework.tests.ErrorValidationsTest"/>
+        <method signature="ErrorValidationsTest.invalidEmailValidation()[pri:1, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@16fdec90]" name="invalidEmailValidation" class="Kane.SeleniumJavaFramework.tests.ErrorValidationsTest"/>
       </group> <!-- ErrorHandling -->
+      <group name="POC">
+        <method signature="SampleTest.test1()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SampleTest@1afdd473]" name="test1" class="Kane.SeleniumJavaFramework.tests.SampleTest"/>
+      </group> <!-- POC -->
     </groups>
-    <test started-at="2025-11-21T13:09:05 IST" name="Latest" finished-at="2025-11-21T13:09:27 IST" duration-ms="21915">
+    <test started-at="2025-11-21T17:50:48 IST" name="Latest" finished-at="2025-11-21T17:51:18 IST" duration-ms="29641">
       <class name="Kane.SeleniumJavaFramework.tests.SubmitOrderTest">
-        <test-method is-config="true" signature="loadDBProps()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@15888343]" started-at="2025-11-21T13:09:05 IST" name="loadDBProps" finished-at="2025-11-21T13:09:05 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="loadDBProps()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@6436a7db]" started-at="2025-11-21T17:50:48 IST" name="loadDBProps" finished-at="2025-11-21T17:50:48 IST" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadDBProps -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@15888343]" started-at="2025-11-21T13:09:06 IST" name="launchApplication" finished-at="2025-11-21T13:09:09 IST" duration-ms="2893" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@6436a7db]" started-at="2025-11-21T17:50:49 IST" name="launchApplication" finished-at="2025-11-21T17:50:52 IST" duration-ms="3289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="endToendTest(java.util.HashMap)[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@15888343]" started-at="2025-11-21T13:09:09 IST" name="endToendTest" data-provider="getDataMap" finished-at="2025-11-21T13:09:12 IST" duration-ms="3158" status="PASS">
+        <test-method signature="endToendTest(java.util.HashMap)[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@6436a7db]" started-at="2025-11-21T17:50:52 IST" name="endToendTest" data-provider="getDataMap" finished-at="2025-11-21T17:50:56 IST" duration-ms="3857" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -31,15 +34,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endToendTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@15888343]" started-at="2025-11-21T13:09:12 IST" name="teardown" finished-at="2025-11-21T13:09:12 IST" duration-ms="102" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@6436a7db]" started-at="2025-11-21T17:50:56 IST" name="teardown" finished-at="2025-11-21T17:50:56 IST" duration-ms="184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@15888343]" started-at="2025-11-21T13:09:12 IST" name="launchApplication" finished-at="2025-11-21T13:09:15 IST" duration-ms="2752" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@6436a7db]" started-at="2025-11-21T17:50:56 IST" name="launchApplication" finished-at="2025-11-21T17:50:59 IST" duration-ms="2752" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="endToendTest(java.util.HashMap)[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@15888343]" started-at="2025-11-21T13:09:15 IST" name="endToendTest" data-provider="getDataMap" finished-at="2025-11-21T13:09:18 IST" duration-ms="3196" status="PASS">
+        <test-method signature="endToendTest(java.util.HashMap)[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@6436a7db]" started-at="2025-11-21T17:50:59 IST" name="endToendTest" data-provider="getDataMap" finished-at="2025-11-21T17:51:02 IST" duration-ms="2954" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -50,15 +53,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endToendTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@15888343]" started-at="2025-11-21T13:09:18 IST" name="teardown" finished-at="2025-11-21T13:09:18 IST" duration-ms="166" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@6436a7db]" started-at="2025-11-21T17:51:02 IST" name="teardown" finished-at="2025-11-21T17:51:02 IST" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@15888343]" started-at="2025-11-21T13:09:18 IST" name="launchApplication" finished-at="2025-11-21T13:09:21 IST" duration-ms="2817" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@6436a7db]" started-at="2025-11-21T17:51:02 IST" name="launchApplication" finished-at="2025-11-21T17:51:03 IST" duration-ms="1456" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="endToendTest(java.util.HashMap)[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@15888343]" started-at="2025-11-21T13:09:21 IST" name="endToendTest" data-provider="getDataMap" finished-at="2025-11-21T13:09:24 IST" duration-ms="3026" status="PASS">
+        <test-method signature="endToendTest(java.util.HashMap)[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@6436a7db]" started-at="2025-11-21T17:51:03 IST" name="endToendTest" data-provider="getDataMap" finished-at="2025-11-21T17:51:06 IST" duration-ms="3065" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,61 +72,189 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endToendTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@15888343]" started-at="2025-11-21T13:09:24 IST" name="teardown" finished-at="2025-11-21T13:09:24 IST" duration-ms="128" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@6436a7db]" started-at="2025-11-21T17:51:06 IST" name="teardown" finished-at="2025-11-21T17:51:07 IST" duration-ms="146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@15888343]" started-at="2025-11-21T13:09:24 IST" name="launchApplication" finished-at="2025-11-21T13:09:27 IST" duration-ms="2528" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@6436a7db]" started-at="2025-11-21T17:51:07 IST" name="launchApplication" finished-at="2025-11-21T17:51:09 IST" duration-ms="2796" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="orderHistory()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@15888343]" started-at="2025-11-21T13:09:27 IST" name="orderHistory" finished-at="2025-11-21T13:09:27 IST" depends-on-methods="Kane.SeleniumJavaFramework.tests.SubmitOrderTest.endToendTest" duration-ms="759" status="PASS">
+        <test-method retried="true" signature="endToendTest(java.util.HashMap)[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@6436a7db]" started-at="2025-11-21T17:51:09 IST" name="endToendTest" data-provider="getDataMap" finished-at="2025-11-21T17:51:10 IST" duration-ms="666" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{productname=QWERTY, password=Kane@1213, email=Kane@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null
+at Kane.SeleniumJavaFramework.pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:52)
+at Kane.SeleniumJavaFramework.tests.SubmitOrderTest.endToendTest(SubmitOrderTest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+at java.base/java.lang.Thread.run(Thread.java:1474)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endToendTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@6436a7db]" started-at="2025-11-21T17:51:10 IST" name="teardown" finished-at="2025-11-21T17:51:10 IST" duration-ms="107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@6436a7db]" started-at="2025-11-21T17:51:10 IST" name="launchApplication" finished-at="2025-11-21T17:51:14 IST" duration-ms="3815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="endToendTest(java.util.HashMap)[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@6436a7db]" started-at="2025-11-21T17:51:14 IST" name="endToendTest" data-provider="getDataMap" finished-at="2025-11-21T17:51:15 IST" duration-ms="697" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{productname=QWERTY, password=Kane@1213, email=Kane@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null
+at Kane.SeleniumJavaFramework.pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:52)
+at Kane.SeleniumJavaFramework.tests.SubmitOrderTest.endToendTest(SubmitOrderTest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+at java.base/java.lang.Thread.run(Thread.java:1474)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endToendTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@6436a7db]" started-at="2025-11-21T17:51:15 IST" name="teardown" finished-at="2025-11-21T17:51:15 IST" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@6436a7db]" started-at="2025-11-21T17:51:15 IST" name="launchApplication" finished-at="2025-11-21T17:51:17 IST" duration-ms="1448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="orderHistory()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@6436a7db]" started-at="2025-11-21T17:51:17 IST" name="orderHistory" finished-at="2025-11-21T17:51:18 IST" depends-on-methods="Kane.SeleniumJavaFramework.tests.SubmitOrderTest.endToendTest" duration-ms="836" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at Kane.SeleniumJavaFramework.tests.SubmitOrderTest.orderHistory(SubmitOrderTest.java:50)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+at java.base/java.lang.Thread.run(Thread.java:1474)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderHistory -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@15888343]" started-at="2025-11-21T13:09:27 IST" name="teardown" finished-at="2025-11-21T13:09:27 IST" duration-ms="101" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SubmitOrderTest@6436a7db]" started-at="2025-11-21T17:51:18 IST" name="teardown" finished-at="2025-11-21T17:51:18 IST" duration-ms="95" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- Kane.SeleniumJavaFramework.tests.SubmitOrderTest -->
       <class name="Kane.SeleniumJavaFramework.tests.ErrorValidationsTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@6a8658ff]" started-at="2025-11-21T13:09:05 IST" name="launchApplication" finished-at="2025-11-21T13:09:09 IST" duration-ms="3510" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@16fdec90]" started-at="2025-11-21T17:50:48 IST" name="launchApplication" finished-at="2025-11-21T17:50:52 IST" duration-ms="3683" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="incorrectEmailPasswordErrorValidation()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@6a8658ff]" started-at="2025-11-21T13:09:09 IST" name="incorrectEmailPasswordErrorValidation" finished-at="2025-11-21T13:09:09 IST" duration-ms="462" status="PASS">
+        <test-method signature="incorrectEmailPasswordErrorValidation()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@16fdec90]" started-at="2025-11-21T17:50:52 IST" name="incorrectEmailPasswordErrorValidation" finished-at="2025-11-21T17:50:52 IST" duration-ms="439" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- incorrectEmailPasswordErrorValidation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@6a8658ff]" started-at="2025-11-21T13:09:09 IST" name="teardown" finished-at="2025-11-21T13:09:10 IST" duration-ms="110" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@16fdec90]" started-at="2025-11-21T17:50:52 IST" name="teardown" finished-at="2025-11-21T17:50:53 IST" duration-ms="160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@6a8658ff]" started-at="2025-11-21T13:09:10 IST" name="launchApplication" finished-at="2025-11-21T13:09:13 IST" duration-ms="2990" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@16fdec90]" started-at="2025-11-21T17:50:53 IST" name="launchApplication" finished-at="2025-11-21T17:50:54 IST" duration-ms="1632" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="TestMethod()[pri:1, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@6a8658ff]" started-at="2025-11-21T13:09:13 IST" name="TestMethod" finished-at="2025-11-21T13:09:13 IST" duration-ms="14" status="PASS">
+        <test-method signature="TestMethod()[pri:1, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@16fdec90]" started-at="2025-11-21T17:50:54 IST" name="TestMethod" finished-at="2025-11-21T17:50:54 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestMethod -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@6a8658ff]" started-at="2025-11-21T13:09:13 IST" name="teardown" finished-at="2025-11-21T13:09:13 IST" duration-ms="186" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@16fdec90]" started-at="2025-11-21T17:50:54 IST" name="teardown" finished-at="2025-11-21T17:50:54 IST" duration-ms="138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@6a8658ff]" started-at="2025-11-21T13:09:13 IST" name="launchApplication" finished-at="2025-11-21T13:09:16 IST" duration-ms="2875" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@16fdec90]" started-at="2025-11-21T17:50:54 IST" name="launchApplication" finished-at="2025-11-21T17:50:57 IST" duration-ms="2811" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="invalidEmailValidation()[pri:1, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@6a8658ff]" started-at="2025-11-21T13:09:16 IST" name="invalidEmailValidation" finished-at="2025-11-21T13:09:16 IST" duration-ms="368" status="PASS">
+        <test-method signature="invalidEmailValidation()[pri:1, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@16fdec90]" started-at="2025-11-21T17:50:57 IST" name="invalidEmailValidation" finished-at="2025-11-21T17:50:58 IST" duration-ms="387" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidEmailValidation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@6a8658ff]" started-at="2025-11-21T13:09:16 IST" name="teardown" finished-at="2025-11-21T13:09:16 IST" duration-ms="140" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@16fdec90]" started-at="2025-11-21T17:50:58 IST" name="teardown" finished-at="2025-11-21T17:50:58 IST" duration-ms="125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- Kane.SeleniumJavaFramework.tests.ErrorValidationsTest -->
+      <class name="Kane.SeleniumJavaFramework.tests.SampleTest">
+        <test-method signature="test1()[pri:0, instance:Kane.SeleniumJavaFramework.tests.SampleTest@1afdd473]" started-at="2025-11-21T17:50:48 IST" name="test1" finished-at="2025-11-21T17:50:48 IST" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+      </class> <!-- Kane.SeleniumJavaFramework.tests.SampleTest -->
     </test> <!-- Latest -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <listeners>
-    <listener class-name="Kane.SeleniumJavaFramework.TestComponents.Listeners"/>
+    <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    <listener class-name="Kane.SeleniumJavaFramework.TestComponents.ListenersTwo"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="End to End Test(failed)" verbose="0">
+  <test thread-count="5" parallel="classes" name="Latest(failed)" verbose="0">
     <classes>
       <class name="Kane.SeleniumJavaFramework.tests.SubmitOrderTest">
         <methods>
-          <include name="endToendTest" invocation-numbers="0 1 2"/>
+          <include name="loadDBProps"/>
+          <include name="endToendTest" invocation-numbers="3"/>
+          <include name="orderHistory"/>
           <include name="teardown"/>
           <include name="launchApplication"/>
         </methods>
       </class> <!-- Kane.SeleniumJavaFramework.tests.SubmitOrderTest -->
     </classes>
-  </test> <!-- End to End Test(failed) -->
+  </test> <!-- Latest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

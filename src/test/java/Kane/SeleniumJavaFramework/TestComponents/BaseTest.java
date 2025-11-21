@@ -26,6 +26,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import Kane.SeleniumJavaFramework.pageobjects.LandingPage;
+import Kane.SeleniumJavaFramework.resources.ExtentReporterNg;
 
 public class BaseTest {
 
@@ -102,11 +103,25 @@ public class BaseTest {
 		driver.close();
 	}
 
+	/*
+	 * public String getScreenshot(String testCaseName, WebDriver driver) throws
+	 * IOException { File src = ((TakesScreenshot)
+	 * driver).getScreenshotAs(OutputType.FILE); File file = new File(
+	 * System.getProperty("user.dir") + File.separator + "Reports" + File.separator
+	 * + testCaseName + ".png"); FileUtils.copyFile(src, file); return
+	 * file.getPath(); }
+	 */
 	public String getScreenshot(String testCaseName, WebDriver driver) throws IOException {
-		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		File file = new File(
-				System.getProperty("user.dir") + File.separator + "Reports" + File.separator + testCaseName + ".png");
-		FileUtils.copyFile(src, file);
-		return file.getPath();
+	    
+	    // Save inside the current run folder
+	    String screenshotPath = ExtentReporterNg.runFolderPath 
+	            + File.separator + testCaseName + "_failed.png";
+
+	    File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+	    File dest = new File(screenshotPath);
+	    FileUtils.copyFile(src, dest);
+
+	    return screenshotPath;
 	}
+
 }
