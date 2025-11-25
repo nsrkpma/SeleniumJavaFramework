@@ -26,7 +26,8 @@ public class SubmitOrderTest extends BaseTest {
 	String productname = "ZARA COAT 3";
 
 	
-	@Test(dataProvider = "getDataMap",retryAnalyzer=Retry.class)
+//	@Test(dataProvider = "getDataMap",retryAnalyzer=Retry.class)
+	@Test(dataProvider = "getDataMap")
 	public void endToendTest(HashMap<String, String> input) throws IOException, InterruptedException {
 		ProductCatalogue productCatalogue = landingPage.login(input.get("email"), input.get("password"));
 		productname = input.get("productname");

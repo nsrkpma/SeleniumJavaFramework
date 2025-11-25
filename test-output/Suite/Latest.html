@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Latest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/2/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Nov 21 17:50:48 IST 2025</td>
+<td>Started on:</td><td>Tue Nov 25 18:59:16 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>29 seconds (29641 ms)</td>
+<tr><td>Total time:</td><td>22 seconds (22478 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,21 +76,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Kane.SeleniumJavaFramework.tests.SubmitOrderTest.orderHistory()'><b>orderHistory</b><br>Test class: Kane.SeleniumJavaFramework.tests.SubmitOrderTest</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at Kane.SeleniumJavaFramework.tests.SubmitOrderTest.orderHistory(SubmitOrderTest.java:50)
+<td title='Kane.SeleniumJavaFramework.tests.SubmitOrderTest.endToendTest()'><b>endToendTest</b><br>Test class: Kane.SeleniumJavaFramework.tests.SubmitOrderTest<br>Parameters: {productname=QWERTY, password=Kane@1213, email=Kane@gmail.com}</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because &quot;prod&quot; is null
+	at Kane.SeleniumJavaFramework.pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:40)
+	at Kane.SeleniumJavaFramework.tests.SubmitOrderTest.endToendTest(SubmitOrderTest.java:36)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
 	at java.base/java.lang.Thread.run(Thread.java:1474)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1871920482", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1871920482'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at Kane.SeleniumJavaFramework.tests.SubmitOrderTest.orderHistory(SubmitOrderTest.java:50)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1848132673", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1848132673'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because &quot;prod&quot; is null
+	at Kane.SeleniumJavaFramework.pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:40)
+	at Kane.SeleniumJavaFramework.tests.SubmitOrderTest.endToendTest(SubmitOrderTest.java:36)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -109,40 +107,7 @@ function toggleAllBoxes() {
 	at java.base/java.lang.Thread.run(Thread.java:1474)
 </pre></div></td>
 <td>0</td>
-<td>Kane.SeleniumJavaFramework.tests.SubmitOrderTest@6436a7db</td></tr>
-<tr>
-<td title='Kane.SeleniumJavaFramework.tests.SubmitOrderTest.endToendTest()'><b>endToendTest</b><br>Test class: Kane.SeleniumJavaFramework.tests.SubmitOrderTest<br>Parameters: {productname=QWERTY, password=Kane@1213, email=Kane@gmail.com}</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because &quot;prod&quot; is null
-	at Kane.SeleniumJavaFramework.pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:52)
-	at Kane.SeleniumJavaFramework.tests.SubmitOrderTest.endToendTest(SubmitOrderTest.java:35)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
-	at java.base/java.lang.Thread.run(Thread.java:1474)
-... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1634065886", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1634065886'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because &quot;prod&quot; is null
-	at Kane.SeleniumJavaFramework.pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:52)
-	at Kane.SeleniumJavaFramework.tests.SubmitOrderTest.endToendTest(SubmitOrderTest.java:35)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
-	at java.base/java.lang.Thread.run(Thread.java:1474)
-</pre></div></td>
-<td>0</td>
-<td>Kane.SeleniumJavaFramework.tests.SubmitOrderTest@6436a7db</td></tr>
+<td>Kane.SeleniumJavaFramework.tests.SubmitOrderTest@79179359</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -153,40 +118,40 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Kane.SeleniumJavaFramework.tests.SubmitOrderTest.endToendTest()'><b>endToendTest</b><br>Test class: Kane.SeleniumJavaFramework.tests.SubmitOrderTest<br>Parameters: {productname=IPHONE 13 PRO, password=Kane@1213, email=Kane@gmail.com}</td>
+<td title='Kane.SeleniumJavaFramework.tests.ErrorValidationsTest.TestMethod()'><b>TestMethod</b><br>Test class: Kane.SeleniumJavaFramework.tests.ErrorValidationsTest</td>
 <td></td>
-<td>3</td>
-<td>Kane.SeleniumJavaFramework.tests.SubmitOrderTest@6436a7db</td></tr>
+<td>0</td>
+<td>Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@4eb386df</td></tr>
 <tr>
 <td title='Kane.SeleniumJavaFramework.tests.SubmitOrderTest.endToendTest()'><b>endToendTest</b><br>Test class: Kane.SeleniumJavaFramework.tests.SubmitOrderTest<br>Parameters: {productname=ZARA COAT 3, password=Kane@1213, email=Kane@gmail.com}</td>
 <td></td>
 <td>3</td>
-<td>Kane.SeleniumJavaFramework.tests.SubmitOrderTest@6436a7db</td></tr>
+<td>Kane.SeleniumJavaFramework.tests.SubmitOrderTest@79179359</td></tr>
 <tr>
-<td title='Kane.SeleniumJavaFramework.tests.ErrorValidationsTest.incorrectEmailPasswordErrorValidation()'><b>incorrectEmailPasswordErrorValidation</b><br>Test class: Kane.SeleniumJavaFramework.tests.ErrorValidationsTest</td>
-<td></td>
-<td>0</td>
-<td>Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@16fdec90</td></tr>
-<tr>
-<td title='Kane.SeleniumJavaFramework.tests.ErrorValidationsTest.invalidEmailValidation()'><b>invalidEmailValidation</b><br>Test class: Kane.SeleniumJavaFramework.tests.ErrorValidationsTest</td>
-<td></td>
-<td>0</td>
-<td>Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@16fdec90</td></tr>
-<tr>
-<td title='Kane.SeleniumJavaFramework.tests.ErrorValidationsTest.TestMethod()'><b>TestMethod</b><br>Test class: Kane.SeleniumJavaFramework.tests.ErrorValidationsTest</td>
-<td></td>
-<td>0</td>
-<td>Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@16fdec90</td></tr>
-<tr>
-<td title='Kane.SeleniumJavaFramework.tests.SubmitOrderTest.endToendTest()'><b>endToendTest</b><br>Test class: Kane.SeleniumJavaFramework.tests.SubmitOrderTest<br>Parameters: {productname=ADIDAS ORIGINAL, password=Kane@1213, email=Kane@gmail.com}</td>
+<td title='Kane.SeleniumJavaFramework.tests.SubmitOrderTest.endToendTest()'><b>endToendTest</b><br>Test class: Kane.SeleniumJavaFramework.tests.SubmitOrderTest<br>Parameters: {productname=IPHONE 13 PRO, password=Kane@1213, email=Kane@gmail.com}</td>
 <td></td>
 <td>2</td>
-<td>Kane.SeleniumJavaFramework.tests.SubmitOrderTest@6436a7db</td></tr>
+<td>Kane.SeleniumJavaFramework.tests.SubmitOrderTest@79179359</td></tr>
 <tr>
 <td title='Kane.SeleniumJavaFramework.tests.SampleTest.test1()'><b>test1</b><br>Test class: Kane.SeleniumJavaFramework.tests.SampleTest</td>
 <td></td>
 <td>0</td>
-<td>Kane.SeleniumJavaFramework.tests.SampleTest@1afdd473</td></tr>
+<td>Kane.SeleniumJavaFramework.tests.SampleTest@79517588</td></tr>
+<tr>
+<td title='Kane.SeleniumJavaFramework.tests.SubmitOrderTest.endToendTest()'><b>endToendTest</b><br>Test class: Kane.SeleniumJavaFramework.tests.SubmitOrderTest<br>Parameters: {productname=ADIDAS ORIGINAL, password=Kane@1213, email=Kane@gmail.com}</td>
+<td></td>
+<td>3</td>
+<td>Kane.SeleniumJavaFramework.tests.SubmitOrderTest@79179359</td></tr>
+<tr>
+<td title='Kane.SeleniumJavaFramework.tests.ErrorValidationsTest.invalidEmailValidation()'><b>invalidEmailValidation</b><br>Test class: Kane.SeleniumJavaFramework.tests.ErrorValidationsTest</td>
+<td></td>
+<td>0</td>
+<td>Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@4eb386df</td></tr>
+<tr>
+<td title='Kane.SeleniumJavaFramework.tests.ErrorValidationsTest.incorrectEmailPasswordErrorValidation()'><b>incorrectEmailPasswordErrorValidation</b><br>Test class: Kane.SeleniumJavaFramework.tests.ErrorValidationsTest</td>
+<td></td>
+<td>0</td>
+<td>Kane.SeleniumJavaFramework.tests.ErrorValidationsTest@4eb386df</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -197,27 +162,18 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Kane.SeleniumJavaFramework.tests.SubmitOrderTest.endToendTest()'><b>endToendTest</b><br>Test class: Kane.SeleniumJavaFramework.tests.SubmitOrderTest<br>Parameters: {productname=QWERTY, password=Kane@1213, email=Kane@gmail.com}</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because &quot;prod&quot; is null
-	at Kane.SeleniumJavaFramework.pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:52)
-	at Kane.SeleniumJavaFramework.tests.SubmitOrderTest.endToendTest(SubmitOrderTest.java:35)
+<td title='Kane.SeleniumJavaFramework.tests.SubmitOrderTest.orderHistory()'><b>orderHistory</b><br>Test class: Kane.SeleniumJavaFramework.tests.SubmitOrderTest</td>
+<td><div><pre>java.lang.Throwable: Method Kane.SeleniumJavaFramework.tests.SubmitOrderTest.orderHistory() on instance Kane.SeleniumJavaFramework.tests.SubmitOrderTest@79179359 depends on not successfully finished methods 
+[Kane.SeleniumJavaFramework.tests.SubmitOrderTest.endToendTest() on instance Kane.SeleniumJavaFramework.tests.SubmitOrderTest@79179359]
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
 	at java.base/java.lang.Thread.run(Thread.java:1474)
-... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace943176652", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace943176652'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because &quot;prod&quot; is null
-	at Kane.SeleniumJavaFramework.pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:52)
-	at Kane.SeleniumJavaFramework.tests.SubmitOrderTest.endToendTest(SubmitOrderTest.java:35)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2117137938", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2117137938'><pre>java.lang.Throwable: Method Kane.SeleniumJavaFramework.tests.SubmitOrderTest.orderHistory() on instance Kane.SeleniumJavaFramework.tests.SubmitOrderTest@79179359 depends on not successfully finished methods 
+[Kane.SeleniumJavaFramework.tests.SubmitOrderTest.endToendTest() on instance Kane.SeleniumJavaFramework.tests.SubmitOrderTest@79179359]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
@@ -228,7 +184,7 @@ function toggleAllBoxes() {
 	at java.base/java.lang.Thread.run(Thread.java:1474)
 </pre></div></td>
 <td>0</td>
-<td>Kane.SeleniumJavaFramework.tests.SubmitOrderTest@6436a7db</td></tr>
+<td>Kane.SeleniumJavaFramework.tests.SubmitOrderTest@79179359</td></tr>
 </table><p>
 </body>
 </html>
