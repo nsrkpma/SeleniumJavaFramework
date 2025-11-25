@@ -1,1 +1,18 @@
-allure-results//nreports//ntarget//ntest-output/
+# Build and test artifacts
+target/
+test-output/
+reports/
+allure-results/
+
+# IDE-specific files (Eclipse)
+.settings/
+.classpath
+.project
+
+# Logs and temp files
+*.log
+*.tmp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
