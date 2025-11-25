@@ -1,1 +1,0 @@
-{"uuid":"79262144-4853-4b9b-a4fd-dd2b56a06fcc","name":"Suite","children":["1a7a3d60-75b7-4e15-885a-a8dc674454cb"],"befores":[{"name":"loadDBProps","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1763727932068,"stop":1763727932077}],"afters":[],"start":1763727932049,"stop":1763727932488}

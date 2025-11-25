@@ -1,3 +1,0 @@
-# Created at 2025-11-21T17:55:15.998
-Cannot invoke "com.aventstack.extentreports.ExtentTest.fail(java.lang.Throwable)" because the return value of "java.lang.ThreadLocal.get()" is null
-
