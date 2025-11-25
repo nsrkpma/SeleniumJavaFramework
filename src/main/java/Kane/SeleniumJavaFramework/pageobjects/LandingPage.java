@@ -1,57 +1,45 @@
 package Kane.SeleniumJavaFramework.pageobjects;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-
+import org.openqa.selenium.*;
 import Kane.SeleniumJavaFramework.AbstractComponents.AbstarctComponent;
 
-public class LandingPage extends AbstarctComponent{
+public class LandingPage extends AbstarctComponent {
 
-	WebDriver driver;
+    WebDriver driver;
 
-	public LandingPage(WebDriver driver) {
-		super(driver);
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
-	}
+    public LandingPage(WebDriver driver) {
+        super(driver);
+        this.driver = driver;
+    }
 
-	@FindBy(id = "userEmail")
-	private WebElement userEmail;
+    // --- Updated: Using By locators instead of @FindBy ---
+    private By userEmail = By.id("userEmail");
+    private By userPassword = By.id("userPassword");
+    private By loginButton = By.id("login");
+    private By errorToast = By.id("toast-container");
+    private By emailErrorMessage = By.xpath("//div[contains(text(),'Enter Valid Email')]");
 
-	@FindBy(id = "userPassword")
-	private WebElement userPassword;
+    // --- SAME LOGIC as your original login() ---
+    public ProductCatalogue login(String username, String password) {
+        driver.findElement(userEmail).sendKeys(username);
+        driver.findElement(userPassword).sendKeys(password);
+        driver.findElement(loginButton).click();
+        return new ProductCatalogue(driver);
+    }
 
-	// page factory
-	@FindBy(id = "login")
-	private WebElement loginButton;
-	
-	@FindBy(id="toast-container")
-	private WebElement errorToast;
-	
-	@FindBy(xpath="//div[contains(text(),'Enter Valid Email')]")
-	private WebElement emailErrorMessage;
+    // --- SAME LOGIC ---
+    public void goToUrl(String url) {
+        driver.get(url);
+    }
 
-	public ProductCatalogue login(String username, String password) {
-		userEmail.sendKeys(username);
-		userPassword.sendKeys(password);
-		loginButton.click();
-		ProductCatalogue productCatalogue=new ProductCatalogue(driver);
-		return productCatalogue;
-	}
+    // --- SAME LOGIC, optimized for Selenium 4 ---
+    public String getErrorToast() {
+        waitForElementToAppear(errorToast);
+        return driver.findElement(errorToast).getText();
+    }
 
-	public void goToUrl(String url) {
-		driver.get(url);
-	}
-	
-	public String getErrorToast() {
-		waitForWebElementToAppear(errorToast);
-		return errorToast.getText();
-	}
-	
-	public boolean verifyEmailErrorToast() {
-		return emailErrorMessage.isDisplayed();
-	}
-
+    // --- SAME LOGIC ---
+    public boolean verifyEmailErrorToast() {
+        return driver.findElement(emailErrorMessage).isDisplayed();
+    }
 }

@@ -1,73 +1,54 @@
 package Kane.SeleniumJavaFramework.pageobjects;
 
 import java.util.List;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-
+import org.openqa.selenium.*;
 import Kane.SeleniumJavaFramework.AbstractComponents.AbstarctComponent;
 
 public class ProductCatalogue extends AbstarctComponent {
 
-	WebDriver driver;
+    WebDriver driver;
 
-	public ProductCatalogue(WebDriver driver) {
-		super(driver);
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
-	}
+    public ProductCatalogue(WebDriver driver) {
+        super(driver);
+        this.driver = driver;
+    }
 
-	@FindBy(css = ".mb-3")
-	List<WebElement> products;
-	
-	@FindBy(css=".ng-animating")
-	WebElement spinner;
-	
-	@FindBy(xpath="//button[@routerlink='/dashboard/cart']")
-	WebElement cartIcon;
-	
+    // --- Locators ---
+    private By products = By.cssSelector(".mb-3");
+    private By spinner = By.cssSelector(".ng-animating");
+    private By cartIcon = By.xpath("//button[@routerlink='/dashboard/cart']");
+    private By addToCart = By.cssSelector(".card-body button:last-of-type");
+    private By toastmessage = By.cssSelector("#toast-container");
+    private By ordersButton = By.xpath("//button[@routerlink='/dashboard/myorders']");
 
-	By productsBy = By.cssSelector(".mb-3");
-	By addToCart = By.cssSelector(".card-body button:last-of-type");
-	By toastmessage = By.cssSelector("#toast-container");
+    // --- Same Logic ---
+    public List<WebElement> getProductList() {
+        waitForElementToAppear(products);
+        return driver.findElements(products);
+    }
 
-	public List<WebElement> getProductList() {
+    public WebElement getProductByName(String productname) {
+        return getProductList().stream()
+                .filter(product -> product.findElement(By.tagName("b"))
+                        .getText().equals(productname))
+                .findFirst()
+                .orElse(null);
+    }
 
-		waitForElementToAppear(productsBy);
-		return products;
-	}
+    public void addProductToCart(String productname) throws InterruptedException {
+        WebElement prod = getProductByName(productname);
+        prod.findElement(addToCart).click();
+        waitForElementToAppear(toastmessage);
+        Thread.sleep(1000); // Keeping logic same
+    }
 
-	public WebElement getProductByName(String productname) {
-		WebElement prod = getProductList().stream()
-				.filter(product -> product.findElement(By.tagName("b")).getText().equals(productname)).findFirst()
-				.orElse(null);
-		return prod;
-	}
+    public CartPage goToCart() {
+        driver.findElement(cartIcon).click();
+        return new CartPage(driver);
+    }
 
-	public void addProductToCart(String productname) throws InterruptedException {
-		WebElement prod = getProductByName(productname);
-		prod.findElement(addToCart).click();
-		waitForElementToAppear(toastmessage);
-		Thread.sleep(1000);
-		//waitForElementToDisappear(spinner);
-	}
-	
-	public CartPage goToCart() {
-		cartIcon.click();
-		CartPage cartpage=new CartPage(driver);
-		return cartpage;
-	}
-	@FindBy(xpath="//button[@routerlink='/dashboard/myorders']")
-	WebElement OrdersButton;
-	
-	public OrderPage viewOrderDetails() {
-		OrdersButton.click();
-		OrderPage orderpage=new OrderPage(driver);
-		return orderpage;
-	}
-	
-
+    public OrderPage viewOrderDetails() {
+        driver.findElement(ordersButton).click();
+        return new OrderPage(driver);
+    }
 }

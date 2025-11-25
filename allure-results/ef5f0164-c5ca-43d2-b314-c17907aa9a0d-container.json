@@ -1,0 +1,1 @@
+{"uuid":"ef5f0164-c5ca-43d2-b314-c17907aa9a0d","name":"Default suite","children":["0a84509c-4b90-4129-873f-73d3fb6f16c7"],"befores":[{"name":"loadDBProps","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1764077180648,"stop":1764077180654}],"afters":[],"start":1764077180627,"stop":1764077197826}
